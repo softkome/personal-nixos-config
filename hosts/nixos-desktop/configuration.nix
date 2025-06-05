@@ -11,6 +11,4 @@
   networking.hostName = hostname;
 
   system.stateVersion = "24.11";
-  user = "softkome";
-  inputs = inputs;
 }
