@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, user, ... }: {
   users.users.softkome = {
     isNormalUser = true;
     description = "Softkome User";
