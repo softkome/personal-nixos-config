@@ -3,6 +3,7 @@
 {
   imports = [
     ./home-packages.nix
+    ./modules
   ];
 
   home = {
