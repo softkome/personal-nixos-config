@@ -13,7 +13,6 @@
     ./git.nix
     ./lazygit.nix
     ./neovim.nix
-    ./qt.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
