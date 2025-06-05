@@ -6,6 +6,7 @@
     ./graphics.nix
     ./home-manager.nix
     ./kernel.nix
+    ./keyboard.nix
     ./locals.nix
     ./net.nix
     ./nix.nix
