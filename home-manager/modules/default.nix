@@ -1,5 +1,24 @@
 {
   imports = [
-
+    ./fuzzel
+    ./hyprland
+    ./swaync
+    ./waybar
+    ./alacritty.nix
+    ./bat.nix
+    ./chromium.nix
+    ./env.nix
+    ./eza.nix
+    ./fish.nix
+    ./git.nix
+    ./lazygit.nix
+    ./mime.nix
+    ./neovim.nix
+    ./qt.nix
+    ./ranger.nix
+    ./starship.nix
+    ./stylix.nix
+    ./tmux.nix
+    ./zathura.nix
   ];
 }
