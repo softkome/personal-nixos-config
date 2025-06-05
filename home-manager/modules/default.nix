@@ -12,7 +12,6 @@
     ./fish.nix
     ./git.nix
     ./lazygit.nix
-    ./mime.nix
     ./neovim.nix
     ./qt.nix
     ./ranger.nix
