@@ -4,6 +4,6 @@
       inherit inputs user homeStateVersion;
     };
 
-    users.${user} = import ../../home-manager/home.nix;
+    users.${user} = import ../home-manager/home.nix;
   };
 }
