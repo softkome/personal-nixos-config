@@ -1,5 +1,15 @@
 {
   imports = [
-
+    ./allowunfree.nix
+    ./audio.nix
+    ./boot.nix
+    ./graphics.nix
+    ./home-manager.nix
+    ./kernel.nix
+    ./locals.nix
+    ./net.nix
+    ./nix.nix
+    ./timezone.nix
+    ./user.nix
   ];
 }
