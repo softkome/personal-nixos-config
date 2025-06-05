@@ -2,8 +2,9 @@
 
 {
   imports = [
+    ./local-packages.nix
     ./hardware-configuration.nix
-    ../../nixos-modules
+    ../../system-modules
     inputs.home-manager.nixosModules.default
   ];
 
