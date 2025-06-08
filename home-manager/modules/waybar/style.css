@@ -1,6 +1,7 @@
+/* Base Styling */
 * {
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   font-family: "JetBrains Mono";
   font-weight: bold;
   font-size: 13px;
@@ -13,7 +14,7 @@ window#waybar {
 }
 
 /* Workspace Buttons */
-#workspaces button label{
+#workspaces button label {
   color: #ebdbb2;
   padding: 0 10px;
 }
@@ -24,34 +25,22 @@ window#waybar {
   background: #a89984;
 }
 
-#power, #clock, #battery, #pulseaudio, #tray, #network {
+/* Shared Padding & Margin for Modules */
+#power, #clock, #battery, #pulseaudio, #tray, #network,
+#custom-power, #custom-microphone {
   padding: 0 10px;
-  margin: 0 10px;
+  margin: 0;
 }
 
+/* Module Colors & Borders */
 #network {
-  margin: 0;
   color: #d79921;
   border-bottom: 5px solid #d79921;
 }
 
 #custom-power {
-  padding: 0 10px;
-  margin: 0;
   color: #458588;
   border-bottom: 5px solid #458588;
-}
-
-#custom-microphone {
-  padding: 0 10px;
-  margin: 0;
-  color: #a89984;
-  border-bottom: 5px solid #a89984;
-}
-
-#custom-microphone.muted {
-  color: #a89984;
-  border-bottom: 5px solid #a89984;
 }
 
 #custom-power:hover {
@@ -59,8 +48,13 @@ window#waybar {
   color: #1d2021;
 }
 
+#custom-microphone,
+#custom-microphone.muted {
+  color: #a89984;
+  border-bottom: 5px solid #a89984;
+}
+
 #pulseaudio {
-  margin: 0;
   color: #689d6a;
   border-bottom: 5px solid #689d6a;
 }
@@ -72,19 +66,17 @@ window#waybar {
 }
 
 #battery {
-  margin: 0;
   color: #458588;
   border-bottom: 5px solid #458588;
 }
 
 #clock {
-  margin: 0;
   color: #b16286;
   border-bottom: 5px solid #b16286;
 }
 
 #tray {
-  margin: 0;
   color: #d65d0e;
   border-bottom: 5px solid #d65d0e;
 }
+
