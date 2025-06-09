@@ -19,7 +19,7 @@
       "$menu" = "fuzzel";
 
       exec-once = [
-        "waybar"
+        ""[[ $(pgrep -x waybar) ]] || waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];
