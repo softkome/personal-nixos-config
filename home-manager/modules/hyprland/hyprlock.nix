@@ -1,6 +1,7 @@
 {
   programs.hyprlock = {
     enable = true;
+
     settings = {
       general = {
         disable_loading_bar = true;
@@ -25,7 +26,7 @@
           path = "screenshot";
           blur_passes = 3;
           blur_size = 8;
-        },
+        }
       ];
 
       input-field = [
@@ -40,7 +41,7 @@
           outline_thickness = 5;
           placeholder_text = "sussy baka";
           shadow_passes = 1;
-        },
+        }
       ];
     };
   };
