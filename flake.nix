@@ -23,7 +23,7 @@
         "nixos-desktop" = {
           user = "softkome";
           hostname = "nixos-desktop";
-          stateVersion = "24.11";
+          stateVersion = "25.05";
         };
       };
 
