@@ -1,5 +1,5 @@
 {
-  description = "nixos clean config";
+  description = "nixos configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -13,6 +13,7 @@
       url = "github:danth/stylix/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
   };
 
   outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
@@ -35,11 +36,12 @@
             user = cfg.user;
             hostname = cfg.hostname;
             homeStateVersion = cfg.stateVersion;
+	          hostNameKey = name;
           };
 
           modules = [
             ./hosts/${name}/configuration.nix
-            inputs.home-manager.nixosModules.default
+	          inputs.home-manager.nixosModules.default
           ];
         };
 
