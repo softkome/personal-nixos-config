@@ -1,15 +1,22 @@
-{
-  programs.chromium = {
-    enable = true;
-    extensions = [
-      # Dark Reader
-      { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
+{ lib, config, ...}: {
 
-      # Unhook - Remove YouTube Recommended & Shorts
-      { id = "khncfooichmfjbepaaaebmommgaepoid"; }
+  options = {
+    chromiumMod = lib.mkEnableOption "enables chromiumMod";
+  };
 
-      # FireShot
-      { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
-    ];
+  config = lib.mkIf config.chromiumMod {
+    programs.chromium = {
+      enable = true;
+      extensions = [
+        # Dark Reader
+        { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
+  
+        # Unhook - Remove YouTube Recommended & Shorts
+        { id = "khncfooichmfjbepaaaebmommgaepoid"; }
+  
+        # FireShot
+        { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
+      ];
+    };
   };
 }
