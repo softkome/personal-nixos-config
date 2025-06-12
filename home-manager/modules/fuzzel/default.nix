@@ -1,11 +1,17 @@
-{ config, pkgs, ... }:
+{ pkgs, lib, config, ... }: {
 
-{
-  home.packages = [
-    pkgs.fuzzel
-  ];
+  options = {
+    fuzzelMod = lib.mkEnableOption "enables fuzzelMod";
+  };
 
-  xdg.configFile."fuzzel/fuzzel.ini" = {
-    source = ./fuzzel.ini;
+  config = lib.mkIf config.fuzzelMod {
+    home.packages = [
+      pkgs.fuzzel
+    ];
+  
+    xdg.configFile."fuzzel/fuzzel.ini" = {
+      source = ./fuzzel.ini;
+    };
   };
 }
+
