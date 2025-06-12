@@ -22,25 +22,24 @@ window#waybar {
   color: #1d2021;
 }
 #workspaces button.active {
-  background: #a89984;
+  background: #D5C4A1;
 }
 
 /* Shared Padding & Margin for Modules */
 #power, #clock, #battery, #pulseaudio, #tray, #network,
 #custom-power, #custom-microphone {
   padding: 0 10px;
-  margin: 0;
+  margin: 3px 3px 3px 3px;
+  background: #D5C4A1;
 }
 
-/* Module Colors & Borders */
+/* Module Colors & Borders (now with left border instead of bottom) */
 #network {
-  color: #d79921;
-  border-bottom: 5px solid #d79921;
+  color: #1d2021;
 }
 
 #custom-power {
-  color: #458588;
-  border-bottom: 5px solid #458588;
+  color: #1d2021;
 }
 
 #custom-power:hover {
@@ -50,33 +49,29 @@ window#waybar {
 
 #custom-microphone,
 #custom-microphone.muted {
-  color: #a89984;
-  border-bottom: 5px solid #a89984;
+  color: #1d2021;
+  min-width: 14px;
 }
 
 #pulseaudio {
-  color: #689d6a;
-  border-bottom: 5px solid #689d6a;
+  color: #1d2021;
 }
 
 #pulseaudio.muted {
   padding: 0 20px;
-  color: #cc241d;
-  border-bottom: 5px solid #cc241d;
+  color: #1d2021;
 }
 
 #battery {
-  color: #458588;
-  border-bottom: 5px solid #458588;
+  color: #1d2021;
 }
 
 #clock {
-  color: #b16286;
-  border-bottom: 5px solid #b16286;
+  color: #1d2021;
 }
 
 #tray {
-  color: #d65d0e;
-  border-bottom: 5px solid #d65d0e;
+  color: #1d2021;
 }
+
 
