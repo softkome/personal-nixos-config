@@ -1,9 +1,9 @@
-{ inputs, user, homeStateVersion, ... }: {
+{ inputs, user, homeStateVersion, hostNameKey, ... }: {
   home-manager = {
     extraSpecialArgs = {
       inherit inputs user homeStateVersion;
     };
 
-    users.${user} = import ../home-manager/home.nix;
+    users.${user} = import ../hosts/${hostNameKey}/home.nix;
   };
 }
