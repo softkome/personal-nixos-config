@@ -30,6 +30,7 @@
   chromiumMod = true;
   alacrittyMod = true;
   batMod = true;
+  stylixMod = true;
 
   waybarMod = true;
   swayncMod = true;
