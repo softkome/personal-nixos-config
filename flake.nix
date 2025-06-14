@@ -10,7 +10,7 @@
     };
 
     stylix = {
-      url = "github:danth/stylix/release-24.11";
+      url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -41,7 +41,8 @@
 
           modules = [
             ./hosts/${name}/configuration.nix
-	          inputs.home-manager.nixosModules.default
+            inputs.home-manager.nixosModules.default
+            stylix.nixosModules.stylix
           ];
         };
 

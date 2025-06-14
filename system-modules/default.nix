@@ -13,5 +13,6 @@
     ./timezone.nix
     ./user.nix
     ./xdg-portal.nix
+    ./stylix.nix
   ];
 }
