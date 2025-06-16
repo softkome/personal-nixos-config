@@ -70,12 +70,8 @@
         light = "Papirus-Light";
       };
   
-      image = pkgs.fetchurl {
-        url = "https://i.pximg.net/img-original/img/2024/08/23/21/21/14/121764304_p0.jpg";  #HATSUNE MIKUUUUUUUU
-        sha256 = "0pd0xabh5kqq5m22kjps71bk5z64r4phygjhciawdwcrzyf6hrc4";
-  #      url = "https://raw.githubusercontent.com/dharmx/walls/main/anime/a_cartoon_of_a_woman_with_her_hands_on_her_face.jpg"; #crow painting wallpaper
-  #      sha256 = "1zda8j5qk0jgiw9q06diwngv1kl14gsskxf810vgr7dv5xzdvnba";
-      };
+      image = ./themes/mikuwallpaper.jpg;
+        
     };
   };
 }
