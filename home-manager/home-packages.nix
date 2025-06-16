@@ -34,6 +34,7 @@
     playerctl #media controler
     ripgrep #text search
     udisks #disk management
+    ueberzugpp #terminal image viewer
     unzip #extract .zip
     unrar #extract .rar
     wget #file downloader
