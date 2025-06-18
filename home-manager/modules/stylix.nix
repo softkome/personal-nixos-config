@@ -21,7 +21,7 @@
     stylix = {
       enable = true;
       polarity = "dark";
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+      base16Scheme = ./.themes/rabbitEars.yaml;
   
      
       targets = {
@@ -70,7 +70,7 @@
         light = "Papirus-Light";
       };
   
-      image = ./themes/mikuwallpaper.jpg;
+      image = ./themes/wallpaper.jpg;
         
     };
   };
