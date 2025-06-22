@@ -1,4 +1,3 @@
-/* Base Styling */
 * {
   border: none;
   border-radius: 0;
@@ -13,7 +12,6 @@ window#waybar {
   background: #1d2021;
 }
 
-/* Workspace Buttons */
 #workspaces button label {
   color: #ebdbb2;
   padding: 0 10px;
@@ -25,25 +23,11 @@ window#waybar {
   background: #D5C4A1;
 }
 
-/* Shared Padding & Margin for Modules */
 #power, #clock, #battery, #pulseaudio, #tray, #network,
 #custom-power, #custom-microphone {
   padding: 0 10px;
-  margin: 3px 3px 3px 3px;
+  margin: 3px 2px;
   background: #D5C4A1;
-}
-
-/* Module Colors & Borders (now with left border instead of bottom) */
-#network {
-  color: #1d2021;
-}
-
-#custom-power {
-  color: #1d2021;
-}
-
-#custom-power:hover {
-  background-color: #458588;
   color: #1d2021;
 }
 
@@ -53,25 +37,8 @@ window#waybar {
   min-width: 14px;
 }
 
-#pulseaudio {
-  color: #1d2021;
+#custom-microphone.muted,
+#pulseaudio.muted{
+  opacity: 0.6;
 }
-
-#pulseaudio.muted {
-  padding: 0 20px;
-  color: #1d2021;
-}
-
-#battery {
-  color: #1d2021;
-}
-
-#clock {
-  color: #1d2021;
-}
-
-#tray {
-  color: #1d2021;
-}
-
 
