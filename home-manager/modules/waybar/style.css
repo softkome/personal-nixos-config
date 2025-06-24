@@ -21,6 +21,7 @@ window#waybar {
 }
 #workspaces button.active {
   background: #D5C4A1;
+  margin: 3px 2px;
 }
 
 #power, #clock, #battery, #pulseaudio, #tray, #network,
@@ -38,7 +39,9 @@ window#waybar {
 }
 
 #custom-microphone.muted,
-#pulseaudio.muted{
+#pulseaudio.muted,
+#custom-power:hover{
   opacity: 0.6;
 }
+
 
