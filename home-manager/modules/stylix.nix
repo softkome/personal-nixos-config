@@ -21,7 +21,7 @@
     stylix = {
       enable = true;
       polarity = "dark";
-      base16Scheme = ./.themes/rabbitEars.yaml;
+      base16Scheme = ./themes/rabbitEars.yaml;
   
      
       targets = {
