@@ -1,4 +1,4 @@
-{ lib, config, ... }: {
+{{ lib, config, ... }: {
 
   options = {
     waybarMod = lib.mkEnableOption "enables waybarMod";
@@ -36,7 +36,11 @@
             };
           };
   
-	  "custom/power" = {
+	"hyprland/window" = {
+	    format = "[ {title} ]";
+	};
+
+	"custom/power" = {
 	    format = "<span size='large'>⏻</span>";
 	    on-click = "~/.config/waybar/scripts/power-menu.sh";
             tooltip = false;
