@@ -7,43 +7,25 @@
   config = lib.mkIf config.starshipMod.enable {
     programs.starship = {
       enable = true;
-      enableZshIntegration = true;
+      enableFishIntegration = true;
       settings = {
-        add_newline = true;
+        add_newline = false;
   
-        format = "$username$hostname$directory$git_branch$character";
-  
-        username = {
-          show_always = true;
-          format = "[▉](bg:background fg:none)[(bg:background fg:none) $user ](inverted)";
-          style_user = "bg:background fg:none";
-        };
-  
-        hostname = {
-          ssh_only = false;
-          format = "[▉](bg:background fg:none)[(bg:background fg:none) $hostname ](inverted)";
-          style = "bg:background fg:none";
-        };
-  
+        format = "$directory$git_branch$character";
+
         directory = {
-          format = "[▉](bg:background fg:none)[(bg:background fg:none) $path ](inverted)$read_only";
-          style = "bg:background fg:none";
-          read_only = " 🔒";
+          read_only = " [R]";
+	  truncation_length = 2;
           truncation_symbol = "…/";
-        };
-  
-        git_branch = {
-          format = "[▉](bg:background fg:none)[(bg:background fg:none) \ue725 $branch ](inverted)";
-          style = "bg:background fg:none";
-        };
-  
-        character = {
-          success_symbol = "[ & ](green bold)";
-          error_symbol = "[ & ](red)";
-          vicmd_symbol = "[ & ](yellow)";
+	  substitutions = {
+	    "/etc/nixos/home-manager/modules" = "home";
+	    "/etc/nixos" = "nixos";
+	  };
         };
       };
     };
   };
 }
+
+
 
