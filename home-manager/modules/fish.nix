@@ -8,47 +8,17 @@
     programs.fish = {
       enable = true;
       shellInit = ''
-        # Disable the Fish greeting
         set -g fish_greeting ""
   
-        # Aliases (Functions in Fish)
-  
-        function r
-          ranger $argv
-        end
-  
-        function v
-          nvim $argv
-        end
-  
-        function se
-          sudoedit $argv
-        end
-  
-        function microfetch
-          command microfetch; echo
-        end
-  
-        function gs
-          git status $argv
-        end
-  
-        function ga
-          git add $argv
-        end
-  
-        function gc
-          git commit $argv
-        end
-  
-        function gp
-          git push $argv
-        end
-  
-        function ..
-          cd .. $argv
-        end
-  
+        alias r = "ranger"
+	      alias v = "nvim"
+	      alias se = "sudoedit"
+	      alias microfetch = "command microfetch; echo"
+	      alias .. = "cd .."
+	      alias hm = "cd /etc/nixos/home-manager/modules/"
+	      alias nx = "cd /etc/nixos/"
+	      alias c = "clear"
+
         # Start Tmux automatically if not already running. No Tmux in TTY
         if test -z "$TMUX" -a -n "$DISPLAY"
           tmux attach-session -t default; or tmux new-session -s default
