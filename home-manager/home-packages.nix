@@ -16,6 +16,7 @@
     gamescope #game optimization
     gamemode #game optimization
     xfce.thunar #gui file manager
+    aseprite #pixel art tool
 
     #cli utils
     bc #calculator
@@ -54,7 +55,7 @@
     #other
     bemoji #emoji picker
     nix-prefetch-scripts #nix fetch scripts
-    protonup #proton installer
+    protonup-ng #proton installer
     mangohud #performance overlay
   ];
 }
